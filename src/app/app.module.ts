@@ -10,10 +10,14 @@ import { VyoozModule } from './components/views/vyooz.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ChartsModule } from 'ng2-charts';
+import { ReqNostrDirective } from './server/req/dir/req-nostr.directive';
+import { ReqPostrDirective } from './server/req/dir/req-postr.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ReqNostrDirective,
+    ReqPostrDirective,
   ],
   imports: [
     BrowserModule,
@@ -30,4 +34,4 @@ import { ChartsModule } from 'ng2-charts';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
