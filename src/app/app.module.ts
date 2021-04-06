@@ -10,8 +10,9 @@ import { VyoozModule } from './components/views/vyooz.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ChartsModule } from 'ng2-charts';
-import { ReqNostrDirective } from './server/req/dir/req-nostr.directive';
-import { ReqPostrDirective } from './server/req/dir/req-postr.directive';
+import { ReqNostrDirective } from './server/conn-ectome/req/dir/req-nostr.directive';
+import { ReqPostrDirective } from './server/conn-ectome/req/dir/req-postr.directive';
+import { ServerIgModule } from './server/server-ig.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ReqPostrDirective } from './server/req/dir/req-postr.directive';
     VyoozModule,
     AuthModule,
     BrowserAnimationsModule,
+    ServerIgModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
