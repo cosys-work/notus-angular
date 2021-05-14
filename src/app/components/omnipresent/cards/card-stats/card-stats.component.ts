@@ -51,9 +51,9 @@ export class CardStatsComponent implements OnInit {
   }
   set statPercentColor(statPercentColor: string) {
     this._statPercentColor =
-      statPercentColor === undefined ? 'text-green-500' : statPercentColor;
+      statPercentColor === undefined ? "text-emerald-500" : statPercentColor;
   }
-  private _statPercentColor = 'text-green-500';
+  private _statPercentColor = "text-emerald-500";
 
   @Input()
   get statDescripiron(): string {
@@ -87,7 +87,7 @@ export class CardStatsComponent implements OnInit {
   }
   private _statIconColor = 'bg-red-500';
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
